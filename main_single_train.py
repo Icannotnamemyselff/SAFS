@@ -1,7 +1,6 @@
 import argparse
 import attention_train
 import os
-import cal_MSE_MAE
 import xgboost_train
 
 def exp_main(args):
@@ -9,12 +8,10 @@ def exp_main(args):
       print(args.method)
       # print(args)
       attention_train.attention(args)
-      cal_MSE_MAE.cal_all_aver_result(args)
   if (args.method == "xgb"):
       print(args.method)
       print(args)
       xgboost_train.XGB_train(args)
-      cal_MSE_MAE.cal_all_aver_result(args)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -34,7 +31,7 @@ if __name__ == '__main__':
     parser.add_argument('--hidden_dim', type=int, default=64)  # default 64
     parser.add_argument('--select_features', type=int, default=18)  # 3 #30 #10
     parser.add_argument('--Batch_attention_Ablation', type=str, default="GFS")  # GFS / GFS_B
-    parser.add_argument('--classifier' , type=str, default="lgb")  # lgb rf mlp
+    parser.add_argument('--classifier', type=str, default="lgb")  # lgb rf mlp
     parser.add_argument('--GINN', type=str, default='Grape')  # self // semi // Grape // VIME
     parser.add_argument('--aaafs', type=bool, default=True)  # True:
 
