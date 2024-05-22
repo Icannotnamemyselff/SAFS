@@ -6,7 +6,7 @@ This is the offcial repository of paper "Supervised Feature Selection with Stack
 
 # 2 Prepare Datasets
 
-All the datasets can be found in OpenML(https://www.openml.org/) and Datamicroarray(https://github.com/ramhiser/datamicroarray/). Here, we provide part of data as a demo.
+All the datasets can be found in OpenML(https://www.openml.org/) and Datamicroarray(https://github.com/ramhiser/datamicroarray/) library. Here, we provide part of data as a demo.
 
 # 3 Run SAFS
 
