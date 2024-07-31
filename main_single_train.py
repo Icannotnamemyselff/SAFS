@@ -1,5 +1,5 @@
 import argparse
-import attention_train
+import SAFS_train
 import os
 import xgboost_train
 
