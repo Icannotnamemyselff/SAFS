@@ -7,7 +7,7 @@ def exp_main(args):
   if (args.method == "attention"):
       print(args.method)
       # print(args)
-      attention_train.attention(args)
+      SAFS_train.SAFS(args)
   if (args.method == "xgb"):
       print(args.method)
       print(args)
